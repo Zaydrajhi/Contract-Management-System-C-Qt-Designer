@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/cam">
+        <file>img/capture_imagee.png</file>
+        <file>img/stop_cameraa.png</file>
+    </qresource>
+</RCC>

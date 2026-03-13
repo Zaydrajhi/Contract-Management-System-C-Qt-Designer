@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>img/1708110523743.png</file>
+        <file>img/1708110546397.png</file>
+        <file>img/1708110564633.png</file>
+        <file>img/1708110583478.png</file>
+        <file>img/1708110598125.png</file>
+        <file>img/1708110620525.png</file>
+        <file>img/back.png</file>
+        <file>img/IMG_4507 (1).jpg</file>
+        <file>img/Picsart_24-02-16_20-03-29-572.png</file>
+        <file>img/Picsart_24-02-16_20-04-00-348.png</file>
+        <file>img/Picsart_24-02-16_20-04-17-307.png</file>
+        <file>img/Picsart_24-02-16_20-04-56-340.png</file>
+        <file>img/Picsart_24-02-16_20-06-09-106.png</file>
+        <file>img/Picsart_24-02-16_20-06-23-828.png</file>
+        <file>img/Picsart_24-02-16_20-07-06-515.png</file>
+        <file>img/Picsart_24-02-16_20-07-24-213.png</file>
+        <file>img/Picsart_24-02-16_20-08-03-121.png</file>
+        <file>img/tri.png</file>
+        <file>img/envoyer.png</file>
+    </qresource>
+</RCC>

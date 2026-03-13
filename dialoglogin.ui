@@ -1,0 +1,913 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogLogin</class>
+ <widget class="QDialog" name="DialogLogin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>611</width>
+    <height>440</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/images/img/back.png);
+</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>611</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: rgb(0, 0, 43);
+/*-----QWidget-----*/
+QWidget
+{
+	background-color: #00111d;
+	color: #000000;
+	border-color: #000000;
+
+}
+
+
+/*-----QLabel-----*/
+QLabel
+{
+	background-color: #00111d;
+	color: #717e87;
+	border-color: #000000;
+
+}
+
+
+/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: #3de6af;
+	color: #000000;
+	border-style: solid;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: #3dffaf;
+	color: #000000;
+	border-style: solid;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: #3dc8af;
+	color: #000000;
+	border-style: solid;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}
+
+
+/*-----QToolButton-----*/
+QToolButton
+{
+	background-color: #00111d;
+	color: #000000;
+	border-style: solid;
+	border-color: #000000;
+	padding: 5px;
+
+}
+
+
+QToolButton::hover
+{
+	background-color: #00111d;
+	color: #000000;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #01dcff;
+
+}
+
+
+QToolButton::pressed
+{
+	background-color: #01dcff;
+	color: #000000;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #01dcff;
+
+}
+
+
+/*-----QLineEdit-----*/
+QLineEdit
+{
+	background-color: #082336;
+	color: #3e93ff;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #1e4b6d;
+	padding: 10px;
+
+}
+
+
+QLineEdit::hover
+{
+	background-color: #082336;
+	color: #3e93ca;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #01dcff;
+	padding: 10px;
+
+}
+
+
+QLineEdit::focus
+{
+	
+	color: #3e93ca;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #01dcff;
+	padding: 10px;
+
+}
+
+
+/*-----QCheckBox-----*/
+QCheckBox
+{
+	background-color: transparent;
+	color: #717e87;
+	border-color: #000000;
+
+}
+
+
+QCheckBox::indicator
+{
+    color: #b1b1b1;
+    background-color: #00111d;
+    border: 1px solid #2aaaa8;
+    width: 12px;
+    height: 12px;
+
+}
+
+
+QCheckBox::indicator:checked
+{
+    image:url(&quot;./ressources/check.png&quot;); /*To replace*/
+	background-color: #1f2b2b;
+    border: 1px solid #2aaaa8;
+
+}
+
+
+QCheckBox::indicator:unchecked:hover
+{
+    border: 1px solid #2aaaa8;
+
+}
+
+
+QCheckBox::disabled
+{
+	color: #656565;
+
+}
+
+
+QCheckBox::indicator:disabled
+{
+	background-color: #656565;
+	color: #656565;
+    border: 1px solid #656565;
+
+}
+QBACKGROUND { display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  background-size: cover;
+  background-position: center;}
+
+</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QCheckBox" name="checkBox_2">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>220</y>
+      <width>161</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>afficher le mot de passe</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>50</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 30pt &quot;Copperplate Gothic Bold&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>LOGIN</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>90</y>
+      <width>341</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>USERNAME   </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="userlineEdit">
+         <property name="styleSheet">
+          <string notr="true">
+/*-----QWidget-----*/
+QWidget
+{
+	background-color: #00111d;
+	color: #000000;
+	border-color: #000000;
+
+}
+
+
+/*-----QLabel-----*/
+QLabel
+{
+	background-color: #00111d;
+	color: #717e87;
+	border-color: #000000;
+
+}
+
+
+/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: #3de6af;
+	color: #000000;
+	border-style: solid;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: #3dffaf;
+	color: #000000;
+	border-style: solid;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: #3dc8af;
+	color: #000000;
+	border-style: solid;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}
+
+
+/*-----QToolButton-----*/
+QToolButton
+{
+	background-color: #00111d;
+	color: #000000;
+	border-style: solid;
+	border-color: #000000;
+	padding: 5px;
+
+}
+
+
+QToolButton::hover
+{
+	background-color: #00111d;
+	color: #000000;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #01dcff;
+
+}
+
+
+QToolButton::pressed
+{
+	background-color: #01dcff;
+	color: #000000;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #01dcff;
+
+}
+
+
+/*-----QLineEdit-----*/
+QLineEdit
+{
+	background-color: #082336;
+	color: #3e93ff;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #1e4b6d;
+	padding: 10px;
+
+}
+
+
+QLineEdit::hover
+{
+	background-color: #082336;
+	color: #3e93ca;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #01dcff;
+	padding: 10px;
+
+}
+
+
+QLineEdit::focus
+{
+	
+	color: #3e93ca;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #01dcff;
+	padding: 10px;
+
+}
+
+
+/*-----QCheckBox-----*/
+QCheckBox
+{
+	background-color: transparent;
+	color: #717e87;
+	border-color: #000000;
+
+}
+
+
+QCheckBox::indicator
+{
+    color: #b1b1b1;
+    background-color: #00111d;
+    border: 1px solid #2aaaa8;
+    width: 12px;
+    height: 12px;
+
+}
+
+
+QCheckBox::indicator:checked
+{
+    image:url(&quot;./ressources/check.png&quot;); /*To replace*/
+	background-color: #1f2b2b;
+    border: 1px solid #2aaaa8;
+
+}
+
+
+QCheckBox::indicator:unchecked:hover
+{
+    border: 1px solid #2aaaa8;
+
+}
+
+
+QCheckBox::disabled
+{
+	color: #656565;
+
+}
+
+
+QCheckBox::indicator:disabled
+{
+	background-color: #656565;
+	color: #656565;
+    border: 1px solid #656565;
+
+}
+QBACKGROUND { display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  background-size: cover;
+  background-position: center;}
+
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>ENTER YOUR USERNAME</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>PASSWORD  </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="passlineEdit_2">
+         <property name="styleSheet">
+          <string notr="true">
+/*-----QWidget-----*/
+QWidget
+{
+	background-color: #00111d;
+	color: #000000;
+	border-color: #000000;
+
+}
+
+
+/*-----QLabel-----*/
+QLabel
+{
+	background-color: #00111d;
+	color: #717e87;
+	border-color: #000000;
+
+}
+
+
+/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: #3de6af;
+	color: #000000;
+	border-style: solid;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: #3dffaf;
+	color: #000000;
+	border-style: solid;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: #3dc8af;
+	color: #000000;
+	border-style: solid;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}
+
+
+/*-----QToolButton-----*/
+QToolButton
+{
+	background-color: #00111d;
+	color: #000000;
+	border-style: solid;
+	border-color: #000000;
+	padding: 5px;
+
+}
+
+
+QToolButton::hover
+{
+	background-color: #00111d;
+	color: #000000;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #01dcff;
+
+}
+
+
+QToolButton::pressed
+{
+	background-color: #01dcff;
+	color: #000000;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #01dcff;
+
+}
+
+
+/*-----QLineEdit-----*/
+QLineEdit
+{
+	background-color: #082336;
+	color: #3e93ff;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #1e4b6d;
+	padding: 10px;
+
+}
+
+
+QLineEdit::hover
+{
+	background-color: #082336;
+	color: #3e93ca;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #01dcff;
+	padding: 10px;
+
+}
+
+
+QLineEdit::focus
+{
+	
+	color: #3e93ca;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #01dcff;
+	padding: 10px;
+
+}
+
+
+/*-----QCheckBox-----*/
+QCheckBox
+{
+	background-color: transparent;
+	color: #717e87;
+	border-color: #000000;
+
+}
+
+
+QCheckBox::indicator
+{
+    color: #b1b1b1;
+    background-color: #00111d;
+    border: 1px solid #2aaaa8;
+    width: 12px;
+    height: 12px;
+
+}
+
+
+QCheckBox::indicator:checked
+{
+    image:url(&quot;./ressources/check.png&quot;); /*To replace*/
+	background-color: #1f2b2b;
+    border: 1px solid #2aaaa8;
+
+}
+
+
+QCheckBox::indicator:unchecked:hover
+{
+    border: 1px solid #2aaaa8;
+
+}
+
+
+QCheckBox::disabled
+{
+	color: #656565;
+
+}
+
+
+QCheckBox::indicator:disabled
+{
+	background-color: #656565;
+	color: #656565;
+    border: 1px solid #656565;
+
+}
+QBACKGROUND { display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  background-size: cover;
+  background-position: center;}
+
+</string>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+         <property name="dragEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+         <property name="placeholderText">
+          <string>ENTER YOUR PASSWORD </string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>240</y>
+      <width>271</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <item>
+      <widget class="QPushButton" name="loginButton">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	font: 12pt &quot;Century Gothic&quot;;
+    background-color: #191970; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 10px; /* Arrondir les coins */
+}
+
+/* Style lorsque la souris survole le bouton */
+QPushButton:hover {
+	color: rgb(255, 255, 255);
+
+background:#DAA520;
+border: none;
+}
+
+/* Style lorsque le bouton est enfoncé */
+QPushButton:pressed {
+    background-color: #b8860b; /* Couleur de fond en cas d'appui */
+    border: 1px solid #446cff; /* Bordure en cas d'appui */
+}
+
+/* Style lorsque le bouton est enfoncé et coché (utilisé pour les boutons à bascule) */
+QPushButton:checked {
+    background-color: #3761ff; /* Couleur de fond en cas de bouton coché */
+    border: 1px solid #3761ff; /* Bordure en cas de bouton coché */
+}
+
+
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>se connecter</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_Quit">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	font: 12pt &quot;Century Gothic&quot;;
+    background-color: #191970; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 10px; /* Arrondir les coins */
+}
+
+/* Style lorsque la souris survole le bouton */
+QPushButton:hover {
+	color: rgb(255, 255, 255);
+
+background:#DAA520;
+border: none;
+}
+
+/* Style lorsque le bouton est enfoncé */
+QPushButton:pressed {
+    background-color: #b8860b; /* Couleur de fond en cas d'appui */
+    border: 1px solid #446cff; /* Bordure en cas d'appui */
+}
+
+/* Style lorsque le bouton est enfoncé et coché (utilisé pour les boutons à bascule) */
+QPushButton:checked {
+    background-color: #3761ff; /* Couleur de fond en cas de bouton coché */
+    border: 1px solid #3761ff; /* Bordure en cas de bouton coché */
+}
+
+
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>annuler</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>110</y>
+      <width>121</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/images/img/IMG_4507 (1).jpg);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loginButton_2">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>290</y>
+      <width>271</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background: rgb(25, 25, 112);
+	
+	font: 10pt &quot;Century Gothic&quot;;
+    background-color: #191970; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 10px; /* Arrondir les coins */
+}
+
+/* Style lorsque la souris survole le bouton */
+QPushButton:hover {
+	color: rgb(255, 255, 255);
+
+background:#DAA520;
+border: none;
+}
+
+/* Style lorsque le bouton est enfoncé */
+QPushButton:pressed {
+    background-color: #b8860b; /* Couleur de fond en cas d'appui */
+    border: 1px solid #446cff; /* Bordure en cas d'appui */
+}
+
+/* Style lorsque le bouton est enfoncé et coché (utilisé pour les boutons à bascule) */
+QPushButton:checked {
+    background-color: #3761ff; /* Couleur de fond en cas de bouton coché */
+    border: 1px solid #3761ff; /* Bordure en cas de bouton coché */
+}
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Mot de passe oublié</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cancelButton_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>390</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 12pt &quot;Century Gothic&quot;;
+    background-color: #191970; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 10px; /* Arrondir les coins */
+}
+
+/* Style lorsque la souris survole le bouton */
+QPushButton:hover {
+	color: rgb(255, 255, 255);
+
+background:#DAA520;
+border: none;
+}
+
+/* Style lorsque le bouton est enfoncé */
+QPushButton:pressed {
+    background-color: #b8860b; /* Couleur de fond en cas d'appui */
+    border: 1px solid #446cff; /* Bordure en cas d'appui */
+}
+
+/* Style lorsque le bouton est enfoncé et coché (utilisé pour les boutons à bascule) */
+QPushButton:checked {
+    background-color: #3761ff; /* Couleur de fond en cas de bouton coché */
+    border: 1px solid #3761ff; /* Bordure en cas de bouton coché */
+}
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>QUITTER</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

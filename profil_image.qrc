@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/image_profil">
+        <file>img/image_unknown.jpg</file>
+    </qresource>
+</RCC>

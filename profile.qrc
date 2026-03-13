@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/profile">
+        <file>img/prof.jpg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/camera">
+        <file>img/capture_image.png</file>
+        <file>img/start_camera.png</file>
+        <file>img/stop_camera.png</file>
+    </qresource>
+</RCC>

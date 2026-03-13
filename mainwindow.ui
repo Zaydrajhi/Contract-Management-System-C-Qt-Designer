@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>511</width>
+    <height>546</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/images/img/back.png);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>0</y>
+      <width>271</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 18pt &quot;Felix Titling&quot;;
+color: rgb(0, 0, 127);
+</string>
+    </property>
+    <property name="text">
+     <string>ASSURITé SUE MESURE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>191</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-top-left-radius:50px;
+background: rgb(13, 40, 93);
+/*background: rgb(0, 0, 127);*/</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>190</y>
+      <width>151</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/images/img/IMG_4507 (1).jpg);
+/*background: rgb(0, 0, 127);*/
+background: rgb(13, 40, 93);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>60</y>
+      <width>231</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QPushButton" name="pushButton_employe">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	background: rgb(0, 0, 127);
+	font: 12pt &quot;Century Gothic&quot;;
+
+    background-color: #191970; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 10px; /* Arrondir les coins */
+}
+
+/* Style lorsque la souris survole le bouton */
+QPushButton:hover {
+	color: rgb(255, 255, 255);
+
+background:#DAA520;
+border: none;
+}
+
+/* Style lorsque le bouton est enfoncé */
+QPushButton:pressed {
+    background-color: #b8860b; /* Couleur de fond en cas d'appui */
+    border: 1px solid #446cff; /* Bordure en cas d'appui */
+}
+
+/* Style lorsque le bouton est enfoncé et coché (utilisé pour les boutons à bascule) */
+QPushButton:checked {
+    background-color: #3761ff; /* Couleur de fond en cas de bouton coché */
+    border: 1px solid #3761ff; /* Bordure en cas de bouton coché */
+}
+
+
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Gestion d'employés</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_adherent">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	background: rgb(0, 0, 127);
+	font: 12pt &quot;Century Gothic&quot;;
+
+    background-color: #191970; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 10px; /* Arrondir les coins */
+}
+
+/* Style lorsque la souris survole le bouton */
+QPushButton:hover {
+	color: rgb(255, 255, 255);
+
+background:#DAA520;
+border: none;
+}
+
+/* Style lorsque le bouton est enfoncé */
+QPushButton:pressed {
+    background-color: #b8860b; /* Couleur de fond en cas d'appui */
+    border: 1px solid #446cff; /* Bordure en cas d'appui */
+}
+
+/* Style lorsque le bouton est enfoncé et coché (utilisé pour les boutons à bascule) */
+QPushButton:checked {
+    background-color: #3761ff; /* Couleur de fond en cas de bouton coché */
+    border: 1px solid #3761ff; /* Bordure en cas de bouton coché */
+}
+
+
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Gestion d'adhérents</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_contrat">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	background: rgb(0, 0, 127);
+	font: 12pt &quot;Century Gothic&quot;;
+
+    background-color: #191970; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 10px; /* Arrondir les coins */
+}
+
+/* Style lorsque la souris survole le bouton */
+QPushButton:hover {
+	color: rgb(255, 255, 255);
+
+background:#DAA520;
+border: none;
+}
+
+/* Style lorsque le bouton est enfoncé */
+QPushButton:pressed {
+    background-color: #b8860b; /* Couleur de fond en cas d'appui */
+    border: 1px solid #446cff; /* Bordure en cas d'appui */
+}
+
+/* Style lorsque le bouton est enfoncé et coché (utilisé pour les boutons à bascule) */
+QPushButton:checked {
+    background-color: #3761ff; /* Couleur de fond en cas de bouton coché */
+    border: 1px solid #3761ff; /* Bordure en cas de bouton coché */
+}
+
+
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Gestion de contrats</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_constat">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	background: rgb(0, 0, 127);
+	font: 12pt &quot;Century Gothic&quot;;
+
+    background-color: #191970; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 10px; /* Arrondir les coins */
+}
+
+/* Style lorsque la souris survole le bouton */
+QPushButton:hover {
+	color: rgb(255, 255, 255);
+
+background:#DAA520;
+border: none;
+}
+
+/* Style lorsque le bouton est enfoncé */
+QPushButton:pressed {
+    background-color: #b8860b; /* Couleur de fond en cas d'appui */
+    border: 1px solid #446cff; /* Bordure en cas d'appui */
+}
+
+/* Style lorsque le bouton est enfoncé et coché (utilisé pour les boutons à bascule) */
+QPushButton:checked {
+    background-color: #3761ff; /* Couleur de fond en cas de bouton coché */
+    border: 1px solid #3761ff; /* Bordure en cas de bouton coché */
+}
+
+
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Gestion de constats</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_partenaire">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	background: rgb(0, 0, 127);
+	font: 12pt &quot;Century Gothic&quot;;
+
+    background-color: #191970; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 10px; /* Arrondir les coins */
+}
+
+/* Style lorsque la souris survole le bouton */
+QPushButton:hover {
+	color: rgb(255, 255, 255);
+
+background:#DAA520;
+border: none;
+}
+
+/* Style lorsque le bouton est enfoncé */
+QPushButton:pressed {
+    background-color: #b8860b; /* Couleur de fond en cas d'appui */
+    border: 1px solid #446cff; /* Bordure en cas d'appui */
+}
+
+/* Style lorsque le bouton est enfoncé et coché (utilisé pour les boutons à bascule) */
+QPushButton:checked {
+    background-color: #3761ff; /* Couleur de fond en cas de bouton coché */
+    border: 1px solid #3761ff; /* Bordure en cas de bouton coché */
+}
+
+
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Gestion de partenaires</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_LOGOUT">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	background: rgb(0, 0, 127);
+	font: 12pt &quot;Century Gothic&quot;;
+
+    background-color: #191970; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 10px; /* Arrondir les coins */
+}
+
+/* Style lorsque la souris survole le bouton */
+QPushButton:hover {
+	color: rgb(255, 255, 255);
+
+background:#DAA520;
+border: none;
+}
+
+/* Style lorsque le bouton est enfoncé */
+QPushButton:pressed {
+    background-color: #b8860b; /* Couleur de fond en cas d'appui */
+    border: 1px solid #446cff; /* Bordure en cas d'appui */
+}
+
+/* Style lorsque le bouton est enfoncé et coché (utilisé pour les boutons à bascule) */
+QPushButton:checked {
+    background-color: #3761ff; /* Couleur de fond en cas de bouton coché */
+    border: 1px solid #3761ff; /* Bordure en cas de bouton coché */
+}
+
+
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Se déconnecter</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_id">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>450</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">   /* background-color: #e0e0e0;*/ /* Couleur de fond par défaut */
+background: rgb(13, 40, 93);
+    color: #808080; /* Couleur du texte par défaut (gris clair) */
+    border: 1px solid #808080; /* Bordure grise par défaut */
+    border-radius: 7px; /* Arrondir les coins par défaut */
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>511</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
